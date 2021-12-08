@@ -22,7 +22,7 @@ class Payment{
 	function initializePaystack($email,$amount){
         $url = "https://api.paystack.co/transaction/initialize";
         $reference = "ITP".time().rand();
-        $callbackurl = "http://localhost/main-prohect/index.php";
+        $callbackurl = "http://localhost/main-project/index.php";
 
         $fields = [
     'email' => $email,
